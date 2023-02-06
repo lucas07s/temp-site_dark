@@ -258,8 +258,8 @@ h3 {
 }
 
 .scrollTopButton {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -267,6 +267,7 @@ h3 {
   background-color: #e9ecef;
   color: #212529;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .news-list {
