@@ -1,0 +1,33 @@
+.news-list {
+	max-height: 300px;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	overflow-y: scroll;
+	border: 1px solid #e9ecef;
+	.news {
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 1rem;
+		}
+		.description {
+			border-bottom: 1px solid #e9ecef;
+			.date {
+				font-weight: bold;
+				margin-right: 0.5rem;
+			}
+			.category {
+				border-radius: 0.25rem;
+				padding: 0.25rem 0.5rem;
+				&.other {
+					background-color: #adb5bd;
+				}
+				&.campaign {
+					background-color: #fab005;
+				}
+			}
+		}
+		.content {
+
+		}
+	}
+}

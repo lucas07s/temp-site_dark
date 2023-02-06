@@ -1,0 +1,87 @@
+$aside-width: 200px;
+$gap: 2.5rem;
+.main-container {
+	display: flex;
+	gap: $gap;
+	@media (max-width: 767px) {
+		flex-direction: column;				
+	}
+	aside {
+		width: $aside-width;
+		min-height: 100dvh;
+		min-height: 100vh;
+		@media screen and (max-width: 767px) {
+			min-height: unset;
+			width: 100%;
+			padding-bottom: 1rem;
+			border-bottom: 4px solid #f8f9fa;
+		}
+		nav {
+			ul {
+				list-style: none;
+				margin-block-start: 0;
+				margin-block-end: 0;
+				padding-inline-start: 0;
+				@media screen and (max-width: 767px) {
+					display: flex;
+				}
+				li {
+					&.current {
+						background-color: #f8f9fa;
+						color: #212529;
+					}
+					@media screen and (max-width: 767px) {
+						width: calc(100% / 4);
+						text-align: center;
+					}
+					a {
+						text-decoration: none;
+						color: inherit;
+						padding: 0.5rem;
+						display: block;
+						width: 100%;
+						position: relative;
+						&::after {
+							content: '';
+							position: absolute;
+							z-index: -1;
+							bottom: 0;
+							left: 0;
+							width: 0;
+							height:100%;
+							background: #f8f9fa;
+							transition: 0.5s width;
+							opacity: 0;
+						}
+						&:hover {
+							color: #212529;
+						}
+						&:hover::after {
+							width: 100%;
+							opacity: 1;
+						}
+						@media screen and (max-width: 767px) {
+							&::after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	main {
+		width: calc(100% - ($aside-width + $gap * 2));
+		margin-right: $gap;
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			padding: 1rem;
+		}
+		section {
+			padding: 1rem 0;
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	background-color: #212529;
+	color: #f8f9fa;
+
+	.brand {
+		font-size: 1.5rem;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+
+	.header-icons {
+		.header-icon {
+			text-decoration: none;
+			padding: 0.125rem;
+			box-sizing: border-box;
+			transition: 0.5s color;
+			&[href*="https://twitter.com/"] {
+				color: #1da1f2;
+				&:hover {
+					color: lighten($color: #1da1f2, $amount: 10);
+				}
+			}
+			&[href*="https://github.com/"] {
+				color: #f5f5f5;
+				&:hover {
+					color: lighten($color: #f5f5f5, $amount: 10);
+				}
+			}
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+			i {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
