@@ -96,18 +96,34 @@ header .header-icons .header-icon {
   padding: 0.125rem;
   box-sizing: border-box;
   transition: 0.5s color;
+  font-size: 1.5rem;
 }
-header .header-icons .header-icon[href*="https://twitter.com/"] {
+header .header-icons .header-icon[href*="https://twitter.com/"]::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
   color: #1da1f2;
+  font-weight: 400;
 }
-header .header-icons .header-icon[href*="https://twitter.com/"]:hover {
+header .header-icons .header-icon[href*="https://twitter.com/"]::after:hover {
   color: #4db5f5;
 }
-header .header-icons .header-icon[href*="https://github.com/"] {
+header .header-icons .header-icon[href*="https://github.com/"]::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
   color: #f5f5f5;
+  font-weight: 400;
 }
-header .header-icons .header-icon[href*="https://github.com/"]:hover {
+header .header-icons .header-icon[href*="https://github.com/"]::after:hover {
   color: white;
+}
+header .header-icons .header-icon[href*="https://instagram.com/"]::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+  color: #e1306c;
+  font-weight: 400;
+}
+header .header-icons .header-icon[href*="https://instagram.com/"]::after:hover {
+  color: #e75d8c;
 }
 header .header-icons .header-icon:not(:last-child) {
   margin-right: 5px;

@@ -20,20 +20,30 @@ header {
 			padding: 0.125rem;
 			box-sizing: border-box;
 			transition: 0.5s color;
-			&[href*="https://twitter.com/"] {
+			font-size: 1.5rem;
+			&[href*="https://twitter.com/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f099';
 				color: #1da1f2;
+				font-weight: 400;
 				&:hover {
 					color: lighten($color: #1da1f2, $amount: 10);
 				}
 			}
-			&[href*="https://github.com/"] {
+			&[href*="https://github.com/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f09b';
 				color: #f5f5f5;
+				font-weight: 400;
 				&:hover {
 					color: lighten($color: #f5f5f5, $amount: 10);
 				}
 			}
-			&[href*="https://instagram.com/"] {
+			&[href*="https://instagram.com/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f16d';
 				color: #e1306c;
+				font-weight: 400;
 				&:hover {
 					color: lighten($color: #e1306c, $amount: 10);
 				}
