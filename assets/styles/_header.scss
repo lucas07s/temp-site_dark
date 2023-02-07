@@ -32,6 +32,12 @@ header {
 					color: lighten($color: #f5f5f5, $amount: 10);
 				}
 			}
+			&[href*="https://instagram.com/"] {
+				color: #e1306c;
+				&:hover {
+					color: lighten($color: #e1306c, $amount: 10);
+				}
+			}
 			&:not(:last-child) {
 				margin-right: 5px;
 			}
