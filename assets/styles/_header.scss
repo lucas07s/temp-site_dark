@@ -48,6 +48,42 @@ header {
 					color: lighten($color: #e1306c, $amount: 10);
 				}
 			}
+			&[href*="https://youtube.com/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f167';
+				color: #ff0000;
+				font-weight: 400;
+				&:hover {
+					color: lighten($color: #e1306c, $amount: 10);
+				}
+			}
+			&[href*="https://line.me/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f3c0';
+				color: #06c775;
+				font-weight: 400;
+				&:hover {
+					color: lighten($color: #e1306c, $amount: 10);
+				}
+			}
+			&[href*="https://twitch.tv/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f1e8';
+				color: #6441a5;
+				font-weight: 400;
+				&:hover {
+					color: lighten($color: #e1306c, $amount: 10);
+				}
+			}
+			&[href*="https://discord.com/"]::after {
+				font-family: 'Font Awesome 5 Brands';
+				content: '\f392';
+				color: #7289da;
+				font-weight: 400;
+				&:hover {
+					color: lighten($color: #e1306c, $amount: 10);
+				}
+			}
 			&:not(:last-child) {
 				margin-right: 5px;
 			}
